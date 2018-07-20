@@ -82,7 +82,7 @@ var context = svg.append("g")
     .attr("class", "context")
     .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
 
-d3.csv("http://localhost:8080/Downloads/sp5001.csv", type, function(error, data) {
+d3.csv("https://github.com/nageshnaik/spx500/blob/master/pix/sp5001.csv", type, function(error, data) {
   if (error) throw error;
 
   x.domain(d3.extent(data, function(d) { return d.date; }));
